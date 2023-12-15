@@ -1,7 +1,7 @@
 name: "Tinc VPN Client"
 description: "Open-source VPN daemon"
 url: https://github.com/mdzidic/hassio-tinc-vpn-client
-version: "0.0.1"
+version: "0.0.2"
 slug: "tinc"
 init: false
 arch:
