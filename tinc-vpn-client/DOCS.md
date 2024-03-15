@@ -81,7 +81,7 @@ This option affects the address family of listening and outgoing sockets.
 
 ### Option `mode` (required)
 
-One of "swtich", "router" or hub. 
+One of "router", "switch" or "hub". Router is the default mode, and unless you really know you need another mode, don't change it.
 
 ## Support
 
