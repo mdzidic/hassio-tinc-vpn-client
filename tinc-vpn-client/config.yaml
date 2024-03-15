@@ -20,6 +20,7 @@ options:
   server_name: server01
   server_public_key: paste-server-public-key-base64
   connect_to: tinc-server-fqdn-or-ip
+  network_name: tinc0
   server_subnet: 10.0.0.1/32
   client_name: client01
   public_key: paste-client-public-key-base64
@@ -27,10 +28,12 @@ options:
   client_subnet: 10.0.0.2/32
   client_route: 10.0.0.0/24
   address_family: ipv4
+  mode: router
 schema:
   server_name: str
   server_public_key: str
   connect_to: str
+  network_name: str
   server_subnet: str
   client_name: str
   public_key: str
@@ -38,3 +41,4 @@ schema:
   client_subnet: str
   client_route: str
   address_family: list(ipv4|ipv6)
+  mode: str

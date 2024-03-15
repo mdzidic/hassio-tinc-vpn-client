@@ -24,6 +24,7 @@ Add-on configuration:
   server_name: server01
   server_public_key: paste-server-public-key-base64
   connect_to: tinc-server-fqdn-or-ip
+  network_name: tinc0
   server_subnet: 10.0.0.1/32
   client_name: client01
   public_key: paste-client-public-key-base64
@@ -31,6 +32,7 @@ Add-on configuration:
   client_subnet: 10.0.0.2/32
   client_route: 10.0.0.0/24
   address_family: ipv4
+  mode: router
 ```
 
 ### Option: `server_name` (required)
@@ -44,6 +46,10 @@ Convert server public key to base64 format and fill the field.
 ### Option: `connect_to` (required)
 
 Specifies which other tinc daemon to connect to on startup.
+
+### Option: `network_name` (required)
+
+The name of your tinc network. 
 
 ### Option: `server_subnet` (required)
 
@@ -72,6 +78,10 @@ Set client network route which will be used for `tinc-up` and `tinc-down` script
 ### Option `address_family` (required)
 
 This option affects the address family of listening and outgoing sockets.
+
+### Option `mode` (required)
+
+One of "swtich", "router" or hub. 
 
 ## Support
 
