@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.3
+- Tinc client version bump to 1.0.37
+
 ## 0.0.2
 - Tinc client version bump to 1.0.36
 
